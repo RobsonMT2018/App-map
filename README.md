@@ -42,7 +42,7 @@ Bootstrap
 npm install react-bootstrap bootstrap
 
 ```
-
+API Nominatim
 ```
 npm install --save leaflet
 ```
