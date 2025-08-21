@@ -16,7 +16,7 @@ O projeto foi construído utilizando as seguintes tecnologias:
 * **React**
 * **React-Bootstrap**
 * **React-Leaflet**
-* **Leaflet**
+* **Leaflet** - utilizado para renderizar e manipular mapas interativos em aplicações web
 * **API ViaCEP** - Para consulta de endereços.
 * **API Nominatim (OpenStreetMap)** - Para geocodificação de endereços em coordenadas.
 
