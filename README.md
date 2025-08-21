@@ -61,8 +61,15 @@ cd [NOME_DO_SEU_REPOSITORIO]
 
 ## Imagens
 
-<img width="1271" height="519" alt="image" src="https://github.com/user-attachments/assets/bebd5348-eaeb-4a79-b056-d87c81f5d685" />
+* **Quando insira CEP Invalido**
+  <img width="1847" height="982" alt="image" src="https://github.com/user-attachments/assets/e1b6a021-8073-4bfc-95d0-fe1a3f2be023" />
 
-<img width="1624" height="893" alt="image" src="https://github.com/user-attachments/assets/67e4fe51-0c27-40ce-bd4d-2fcdbc284e18" />
+* **Pagina Inicial do APP**
+  <img width="983" height="685" alt="image" src="https://github.com/user-attachments/assets/77a36007-8f8c-4e09-89cb-e3541048b1d5" />
+
+* **Apos Localização do CEP**
+  <img width="1469" height="867" alt="image" src="https://github.com/user-attachments/assets/6dfbfdf3-a46a-4415-8c09-7ddf97ab38f7" />
+
+
 
 
