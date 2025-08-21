@@ -1,0 +1,122 @@
+/* ==================================== */
+/* 1. Estilos Gerais da Aplicação       */
+/* ==================================== */
+body {
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f8f9fa; /* Fundo cinza claro */
+  color: #34495e; /* Cor do texto principal */
+  margin: 0px;
+  padding: 5px;
+}
+
+/* Container principal para o layout Flexbox */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Espaço entre os cartões */
+  min-height: 10vh;
+  padding: 20px 10px;
+}
+
+/* ==================================== */
+/* 2. Estilos dos Cartões (Cards)       */
+/* ==================================== */
+.form-card,
+.map-card {
+  background-color: #ffffff;
+  border-radius: 10px; /* Cantos mais arredondados */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Sombra mais pronunciada */
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.map-card {
+  
+  margin-top: 0px;
+  margin-left: 30px;
+  height: 500px; /* Altura do mapa em mobile */
+  width: 400px;
+}
+
+/* Efeito de hover nos cartões */
+.form-card:hover,
+.map-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Sombra que se expande */
+}
+
+/* ==================================== */
+/* 3. Estilos dos Elementos do Formulário */
+/* ==================================== */
+h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+form{
+    margin-left: 15%;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 80%;
+  border: 1px solid #ecf0f1;
+  border-radius: 8px;
+  padding: 8px;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: rgba(189, 201, 195, 0.356);
+}
+
+.form-control:focus {
+  border-color: #3498db; /* Cor primária no foco */
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.btn-primary {
+  display: flex;
+  margin-left: 25%;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 10px 30px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px); /* Efeito de "pressionar" */
+}
+
+/* ==================================== */
+/* 4. Layout para Desktop e Tablets     */
+/* ==================================== */
+@media (min-width: 768px) {
+  .app-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch; /* Garante que os cartões tenham a mesma altura */
+    padding: 40px;
+  }
+  
+  .form-card {
+    flex: 1; /* Ocupa o espaço disponível */
+    max-width: 400px; /* Limita a largura em telas maiores */
+  }
+  
+  .map-card {
+    flex: 2; /* Ocupa o dobro de espaço do formulário */
+    max-width: 800px;
+    height: 600px; /* Aumenta a altura para uma melhor visualização */
+  }
+}
